@@ -1,0 +1,311 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+
+'.source.gfm':
+  'inline math':
+    'prefix': 'math'
+    'body': '\$${1:math}\$'
+  'math equation':
+    'prefix': 'equ'
+    'body': '\$\$${1:math}\$\$'
+# greek and hebrew letters
+  'alpha':
+    'prefix': 'alpha'
+    'body': '\\\\alpha '
+  'beta':
+    'prefix': 'beta'
+    'body': '\\\\beta '
+  'chi':
+    'prefix': 'chi '
+    'body': '\\\\chi'
+  'delta':
+    'prefix': 'delta'
+    'body': '\\\\delta '
+  'old timey epsilon':
+    'prefix': 'epsilon-old'
+    'body': '\\\\epsilon '
+  'eta':
+    'prefix': 'eta'
+    'body': '\\\\eta '
+  'gamma':
+    'prefix': 'gamma'
+    'body': '\\\\gamma '
+  'iota':
+    'prefix': 'iota'
+    'body': '\\\\iota '
+  'kappa':
+    'prefix': 'kappa'
+    'body': '\\\\kappa '
+  'lambda':
+    'prefix': 'lambda'
+    'body': '\\\\lambda '
+  'mu':
+    'prefix': 'mu'
+    'body': '\\\\mu '
+  'nu':
+    'prefix': 'nu'
+    'body': '\\\\nu '
+  'omega':
+    'prefix': 'omega'
+    'body': '\\\\omega '
+  'phi':
+    'prefix': 'phi'
+    'body': '\\\\pgi '
+  'pi':
+    'prefix': 'pi'
+    'body': '\\\\pi '
+  'psi':
+    'prefix': 'psi'
+    'body': '\\\\psi '
+  'rho':
+    'prefix': 'rho'
+    'body': '\\\\rho '
+  'sigma':
+    'prefix': 'sigma'
+    'body': '\\\\sigma '
+  'tau':
+    'prefix': 'tau'
+    'body': '\\\\tau '
+  'theta':
+    'prefix': 'theta'
+    'body': '\\\\theta '
+  'upsilon':
+    'prefix': 'upsilon'
+    'body': '\\\\upsilon '
+  'xi':
+    'prefix': 'xi'
+    'body': '\\\\xi '
+  'zeta':
+    'prefix': 'zeta'
+    'body': '\\\\zeta '
+  'digamma':
+    'prefix': 'digamma'
+    'body': '\\\\digamma '
+  'epsilon':
+    'prefix': 'epsilon'
+    'body': '\\\\varepsilon '
+  'different kappa':
+    'prefix': 'kappa-var'
+    'body': '\\\\varkappa '
+  'different phi':
+    'prefix': 'phi-var'
+    'body': '\\\\varphi '
+  'different pi':
+    'prefix': 'pi-var'
+    'body': '\\\\varpi '
+  'different rho':
+    'prefix': 'rho-var'
+    'body': '\\\\varrho '
+  'different sigma':
+    'prefix': 'sigma-var'
+    'body': '\\\\varsigma '
+  'different theta':
+    'prefix': 'theta-var'
+    'body': '\\\\vartheta '
+  'capital delta':
+    'prefix': 'Delta'
+    'body': '\\\\Delta '
+  'capital gamma':
+    'prefix': 'Gamma'
+    'body': '\\\\Gamma '
+  'capital lambda':
+    'prefix': 'Lambda'
+    'body': '\\\\Lambda '
+  'capital omega':
+    'prefix': 'Omega'
+    'body': '\\\\Omega '
+  'capital phi':
+    'prefix': 'Phi'
+    'body': '\\\\Phi '
+  'capital pi':
+    'prefix': 'Pi'
+    'body': '\\\\Pi '
+  'capital psi':
+    'prefix': 'Psi'
+    'body': '\\\\Psi '
+  'capital sigma':
+    'prefix': 'Sigma'
+    'body': '\\\\Sigma '
+
+  'capital theta':
+    'prefix': 'Theta'
+    'body': '\\\\Theta '
+  'capital upsilon':
+    'prefix': 'Upsilon'
+    'body': '\\\\Upsilon '
+  'capital xi':
+    'prefix': 'Xi'
+    'body': '\\\\Xi '
+  'aleph':
+    'prefix': 'aleph'
+    'body': '\\\\aleph '
+  'beth':
+    'prefix': 'beth'
+    'body': '\\\\beth '
+  'daleth':
+    'prefix': 'daleth'
+    'body': '\\\\daleth '
+  'gimel':
+    'prefix': 'gimel'
+    'body': '\\\\gimel '
+# misc
+  'infinity':
+    'prefix': 'infinity'
+    'body': '\\\\infty '
+# common math constructs
+  'fraction':
+    'prefix': 'frac'
+    'body': '\\\\frac\{${1:numerator}\}\{${2:denominator}\} $3'
+  'square root':
+    'prefix': 'sqrt'
+    'body': '\\\\sqrt\{$1\} $2'
+  'nth root':
+    'prefix': 'sqrt-n'
+    'body': '\\\\sqrt[${1:n}]\{$2\} $3'
+  'power':
+    'prefix': 'pow'
+    'body': '${1:x}^\{${2:n}\} $3'
+  'square':
+    'prefix': 'square'
+    'body': '${1:x}^\{2\} $2'
+  'cube':
+    'prefix': 'cube'
+    'body': '${1:x}^\{3\} $2'
+  'summation':
+    'prefix': 'sum'
+    'body': '\\\\sum_\{${1:i=0}\}^\{${2:n}\}\{${3:x}\} $4'
+  'inline summation':
+    'prefix': 'sum-inline'
+    'body': '\\\\sum\\\\limits_\{${1:i=0}\}^\{${2:n}\}\{${3:x}\} $4'
+  'product':
+    'prefix': 'prod'
+    'body': '\\\\prod_\{${1:i=0}\}^\{${2:n}\}\{${3:x}\} $4'
+  'inline product':
+    'prefix': 'prod-inline'
+    'body': '\\\\prod\\\\limits_\{${1:i=0}\}^\{${2:n}\}\{${3:x}\} $4'
+  'integral':
+    'prefix': 'integral'
+    'body': '\\\\int\{${1:x^2}\}~dx $2'
+  'definite integral':
+    'prefix': 'integral-definite'
+    'body': '\\\\int_\{${1:a}\}^\{${2:b}\}\{${3:x^2}\}~dx $4'
+  'inline definite integral':
+    'prefix': 'integral-definite-inline'
+    'body': '\\\\int\\\\limits_\{${1:a}\}^\{${2:b}\}\{${3:x^2}\}~dx $4'
+  'double integral':
+    'prefix': 'integral-double'
+    'body': '\\\\iint_\{${1:V}\}\{${3:u, v}\}~du~dv $4'
+  'inline double integral':
+    'prefix': 'integral-double-inline'
+    'body': '\\\\iint\\\\limits_\{${1:V}\}\{${3:u, v}\}~du~dv $4'
+  'limit':
+    'prefix': 'limit'
+    'body': '\\\\lim_\{${1:x}\\\\to${2:\\\\infty}\} ${3:f(x)} ${4}'
+  'inline limit':
+    'prefix': 'limit-inline'
+    'body': '\\\\lim\\\\limits_\{${1:x}\\\\to${2:\\\\infty}\} ${3:f(x)} ${4}'
+  'times':
+    'prefix': 'times'
+    'body': '\\\\times '
+  'multiplication x':
+    'prefix': 'multiplication'
+    'body': '\\\\times '
+  'dot':
+    'prefix': 'dot'
+    'body': '\\\\cdot '
+  'multiplication dot':
+    'prefix': 'multiplication-dot'
+    'body': '\\\\cdot '
+  'division':
+    'prefix': 'div'
+    'body': '\\\\div '
+  'plus minus':
+    'prefix': 'plus-minus'
+    'body': '\\\\pm '
+  'approximately equal to':
+    'prefix': 'approx'
+    'body': '\\\\approx'
+# set theory
+  'union cup':
+    'prefix': 'cup'
+    'body': '\\\\cup '
+  'union':
+    'prefix': 'union'
+    'body': '\\\\cup '
+  'intersection cap':
+    'prefix': 'cap'
+    'body': '\\\\cap '
+  'intersection':
+    'prefix': 'intersection'
+    'body': '\\\\cap '
+  'union big cup':
+    'prefix': 'cup-big'
+    'body': '\\\\bigcup '
+  'big union':
+    'prefix': 'union-big'
+    'body': '\\\\bigcup '
+  'intersection big cap':
+    'prefix': 'cap-big'
+    'body': '\\\\bigcap '
+  'big intersection':
+    'prefix': 'intersection-big'
+    'body': '\\\\bigcap '
+  'set':
+    'prefix': 'set'
+    'body': '\{${1:x} | ${2:x} \\\\in ${3:A} \} ${4}'
+# function names
+  'arccosine':
+    'prefix': 'arccosine'
+    'body': '\\\\arccos '
+  'cosine':
+    'prefix': 'cosine'
+    'body': '\\\\cos '
+  'tangent':
+    'prefix': 'tangent'
+    'body': '\\\\tan '
+  'cosecant':
+    'prefix': 'cosecant'
+    'body': '\\\\csc '
+  'arcsine':
+    'prefix': 'arcsine'
+    'body': '\\\\arcsin '
+  'sine':
+    'prefix': 'sine'
+    'body': '\\\\sin '
+  'arctangent':
+    'prefix': 'arctangent'
+    'body': '\\\\arctan '
+  'cotangent':
+    'prefix': 'cotangent'
+    'body': '\\\\cot '
+  'determinent':
+    'prefix': 'determinent'
+    'body': '\\\\det '
+  'log':
+    'prefix': 'log'
+    'body': '\\\\log '
+  'natural log':
+    'prefix': 'ln'
+    'body': '\\\\ln '
+  'plain text':
+    'prefix': 'text'
+    'body': '\\\\textrm\{${1}\} $2'
